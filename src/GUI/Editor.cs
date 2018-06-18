@@ -126,6 +126,41 @@ namespace papershredder.Programs.USSE.GUI
                 case "items":
                     // Load Items configuration
                     var items = Config.Config.Normal.Items;
+                    SpawnChance.Value = (decimal)items.Spawn_Chance;
+                    DespawnD.Value = (decimal)items.Despawn_Dropped_Time;
+                    DespawnN.Value = (decimal)items.Despawn_Natural_Time;
+                    CrateBF.Value = (decimal)items.Crate_Bullets_Full_Chance;
+                    CrateBM.Value = (decimal)items.Crate_Bullets_Multiplier;
+                    GunBF.Value = (decimal)items.Gun_Bullets_Full_Chance;
+                    GunBM.Value = (decimal)items.Gun_Bullets_Multiplier;
+                    Durability.Checked = items.Has_Durability;
+                    MagBF.Value = (decimal)items.Magazine_Bullets_Full_Chance;
+                    MagBM.Value = (decimal)items.Magazine_Bullets_Multiplier;
+                    QualityF.Value = (decimal)items.Quality_Full_Chance;
+                    QualityM.Value = (decimal)items.Quality_Multiplier;
+                    RespawnI.Value = (decimal)items.Respawn_Time;
+                    break;
+                case "vehicles":
+                    // Load Vehicles configuration
+                    var vehicles = Config.Config.Normal.Vehicles;
+                    ArmorV.Value = (decimal)vehicles.Armor_Multiplier;
+                    GunD.Value = (decimal)vehicles.Gun_Damage_Multiplier;
+                    Battery.Value = (decimal)vehicles.Has_Battery_Chance;
+                    Tire.Value = (decimal)vehicles.Has_Tire_Chance;
+                    MaxBattery.Value = (decimal)vehicles.Max_Battery_Charge;
+                    InstancesI.Value = vehicles.Max_Instances_Insane;
+                    InstancesL.Value = vehicles.Max_Instances_Large;
+                    InstancesM.Value = vehicles.Max_Instances_Medium;
+                    InstancesS.Value = vehicles.Max_Instances_Small;
+                    InstancesT.Value = vehicles.Max_Instances_Tiny;
+                    MeleeD.Value = (decimal)vehicles.Melee_Damage_Multiplier;
+                    MinBattery.Value = (decimal)vehicles.Min_Battery_Charge;
+                    RespawnV.Value = (decimal)vehicles.Respawn_Time;
+                    Unlock.Value = (decimal)vehicles.Unlocked_After_Seconds_In_Safezone;
+                    break;
+                case "zombies":
+                    // Load Zombies configuration
+                    var zombies = Config.Config.Normal.Zombies;
                     break;
             }
         }

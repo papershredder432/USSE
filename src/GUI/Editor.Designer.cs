@@ -68,7 +68,7 @@
             this.CrateBF = new System.Windows.Forms.NumericUpDown();
             this.MagBM = new System.Windows.Forms.NumericUpDown();
             this.MagBF = new System.Windows.Forms.NumericUpDown();
-            this.GumBM = new System.Windows.Forms.NumericUpDown();
+            this.GunBM = new System.Windows.Forms.NumericUpDown();
             this.GunBF = new System.Windows.Forms.NumericUpDown();
             this.QualityM = new System.Windows.Forms.NumericUpDown();
             this.QualityF = new System.Windows.Forms.NumericUpDown();
@@ -363,7 +363,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.CrateBF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MagBM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MagBF)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GumBM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GunBM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GunBF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QualityM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QualityF)).BeginInit();
@@ -698,6 +698,11 @@
             // Packets
             // 
             this.Packets.Location = new System.Drawing.Point(490, 110);
+            this.Packets.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.Packets.Name = "Packets";
             this.Packets.Size = new System.Drawing.Size(87, 20);
             this.Packets.TabIndex = 65;
@@ -705,6 +710,11 @@
             // TimeoutG
             // 
             this.TimeoutG.Location = new System.Drawing.Point(490, 84);
+            this.TimeoutG.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.TimeoutG.Name = "TimeoutG";
             this.TimeoutG.Size = new System.Drawing.Size(87, 20);
             this.TimeoutG.TabIndex = 64;
@@ -712,6 +722,11 @@
             // TimeoutQ
             // 
             this.TimeoutQ.Location = new System.Drawing.Point(490, 58);
+            this.TimeoutQ.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.TimeoutQ.Name = "TimeoutQ";
             this.TimeoutQ.Size = new System.Drawing.Size(87, 20);
             this.TimeoutQ.TabIndex = 63;
@@ -892,7 +907,7 @@
             this.Items.Controls.Add(this.CrateBF);
             this.Items.Controls.Add(this.MagBM);
             this.Items.Controls.Add(this.MagBF);
-            this.Items.Controls.Add(this.GumBM);
+            this.Items.Controls.Add(this.GunBM);
             this.Items.Controls.Add(this.GunBF);
             this.Items.Controls.Add(this.QualityM);
             this.Items.Controls.Add(this.QualityF);
@@ -923,6 +938,11 @@
             // CrateBM
             // 
             this.CrateBM.Location = new System.Drawing.Point(425, 137);
+            this.CrateBM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.CrateBM.Name = "CrateBM";
             this.CrateBM.Size = new System.Drawing.Size(100, 20);
             this.CrateBM.TabIndex = 61;
@@ -930,6 +950,11 @@
             // CrateBF
             // 
             this.CrateBF.Location = new System.Drawing.Point(425, 111);
+            this.CrateBF.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.CrateBF.Name = "CrateBF";
             this.CrateBF.Size = new System.Drawing.Size(100, 20);
             this.CrateBF.TabIndex = 60;
@@ -937,6 +962,11 @@
             // MagBM
             // 
             this.MagBM.Location = new System.Drawing.Point(425, 85);
+            this.MagBM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MagBM.Name = "MagBM";
             this.MagBM.Size = new System.Drawing.Size(100, 20);
             this.MagBM.TabIndex = 59;
@@ -944,20 +974,35 @@
             // MagBF
             // 
             this.MagBF.Location = new System.Drawing.Point(425, 59);
+            this.MagBF.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MagBF.Name = "MagBF";
             this.MagBF.Size = new System.Drawing.Size(100, 20);
             this.MagBF.TabIndex = 58;
             // 
-            // GumBM
+            // GunBM
             // 
-            this.GumBM.Location = new System.Drawing.Point(425, 33);
-            this.GumBM.Name = "GumBM";
-            this.GumBM.Size = new System.Drawing.Size(100, 20);
-            this.GumBM.TabIndex = 57;
+            this.GunBM.Location = new System.Drawing.Point(425, 33);
+            this.GunBM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
+            this.GunBM.Name = "GunBM";
+            this.GunBM.Size = new System.Drawing.Size(100, 20);
+            this.GunBM.TabIndex = 57;
             // 
             // GunBF
             // 
             this.GunBF.Location = new System.Drawing.Point(425, 6);
+            this.GunBF.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.GunBF.Name = "GunBF";
             this.GunBF.Size = new System.Drawing.Size(100, 20);
             this.GunBF.TabIndex = 56;
@@ -965,6 +1010,11 @@
             // QualityM
             // 
             this.QualityM.Location = new System.Drawing.Point(139, 136);
+            this.QualityM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.QualityM.Name = "QualityM";
             this.QualityM.Size = new System.Drawing.Size(100, 20);
             this.QualityM.TabIndex = 55;
@@ -972,6 +1022,11 @@
             // QualityF
             // 
             this.QualityF.Location = new System.Drawing.Point(139, 110);
+            this.QualityF.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.QualityF.Name = "QualityF";
             this.QualityF.Size = new System.Drawing.Size(100, 20);
             this.QualityF.TabIndex = 54;
@@ -979,6 +1034,11 @@
             // RespawnI
             // 
             this.RespawnI.Location = new System.Drawing.Point(139, 84);
+            this.RespawnI.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.RespawnI.Name = "RespawnI";
             this.RespawnI.Size = new System.Drawing.Size(100, 20);
             this.RespawnI.TabIndex = 53;
@@ -986,6 +1046,11 @@
             // DespawnN
             // 
             this.DespawnN.Location = new System.Drawing.Point(139, 58);
+            this.DespawnN.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.DespawnN.Name = "DespawnN";
             this.DespawnN.Size = new System.Drawing.Size(100, 20);
             this.DespawnN.TabIndex = 52;
@@ -993,6 +1058,11 @@
             // DespawnD
             // 
             this.DespawnD.Location = new System.Drawing.Point(139, 32);
+            this.DespawnD.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.DespawnD.Name = "DespawnD";
             this.DespawnD.Size = new System.Drawing.Size(100, 20);
             this.DespawnD.TabIndex = 51;
@@ -1000,6 +1070,11 @@
             // SpawnChance
             // 
             this.SpawnChance.Location = new System.Drawing.Point(139, 6);
+            this.SpawnChance.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.SpawnChance.Name = "SpawnChance";
             this.SpawnChance.Size = new System.Drawing.Size(100, 20);
             this.SpawnChance.TabIndex = 50;
@@ -1163,6 +1238,11 @@
             // InstancesI
             // 
             this.InstancesI.Location = new System.Drawing.Point(452, 162);
+            this.InstancesI.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.InstancesI.Name = "InstancesI";
             this.InstancesI.Size = new System.Drawing.Size(100, 20);
             this.InstancesI.TabIndex = 55;
@@ -1170,6 +1250,11 @@
             // InstancesL
             // 
             this.InstancesL.Location = new System.Drawing.Point(452, 136);
+            this.InstancesL.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.InstancesL.Name = "InstancesL";
             this.InstancesL.Size = new System.Drawing.Size(100, 20);
             this.InstancesL.TabIndex = 54;
@@ -1177,6 +1262,11 @@
             // InstancesM
             // 
             this.InstancesM.Location = new System.Drawing.Point(452, 110);
+            this.InstancesM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.InstancesM.Name = "InstancesM";
             this.InstancesM.Size = new System.Drawing.Size(100, 20);
             this.InstancesM.TabIndex = 53;
@@ -1184,6 +1274,11 @@
             // InstancesS
             // 
             this.InstancesS.Location = new System.Drawing.Point(452, 84);
+            this.InstancesS.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.InstancesS.Name = "InstancesS";
             this.InstancesS.Size = new System.Drawing.Size(100, 20);
             this.InstancesS.TabIndex = 52;
@@ -1191,6 +1286,11 @@
             // InstancesT
             // 
             this.InstancesT.Location = new System.Drawing.Point(452, 58);
+            this.InstancesT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.InstancesT.Name = "InstancesT";
             this.InstancesT.Size = new System.Drawing.Size(100, 20);
             this.InstancesT.TabIndex = 51;
@@ -1198,6 +1298,11 @@
             // MeleeD
             // 
             this.MeleeD.Location = new System.Drawing.Point(452, 32);
+            this.MeleeD.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MeleeD.Name = "MeleeD";
             this.MeleeD.Size = new System.Drawing.Size(100, 20);
             this.MeleeD.TabIndex = 50;
@@ -1205,6 +1310,11 @@
             // GunD
             // 
             this.GunD.Location = new System.Drawing.Point(452, 6);
+            this.GunD.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.GunD.Name = "GunD";
             this.GunD.Size = new System.Drawing.Size(100, 20);
             this.GunD.TabIndex = 49;
@@ -1212,6 +1322,11 @@
             // ArmorV
             // 
             this.ArmorV.Location = new System.Drawing.Point(152, 162);
+            this.ArmorV.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.ArmorV.Name = "ArmorV";
             this.ArmorV.Size = new System.Drawing.Size(100, 20);
             this.ArmorV.TabIndex = 48;
@@ -1219,6 +1334,11 @@
             // Unlock
             // 
             this.Unlock.Location = new System.Drawing.Point(152, 136);
+            this.Unlock.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.Unlock.Name = "Unlock";
             this.Unlock.Size = new System.Drawing.Size(100, 20);
             this.Unlock.TabIndex = 47;
@@ -1226,6 +1346,11 @@
             // RespawnV
             // 
             this.RespawnV.Location = new System.Drawing.Point(152, 110);
+            this.RespawnV.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.RespawnV.Name = "RespawnV";
             this.RespawnV.Size = new System.Drawing.Size(100, 20);
             this.RespawnV.TabIndex = 46;
@@ -1233,6 +1358,11 @@
             // Tire
             // 
             this.Tire.Location = new System.Drawing.Point(152, 84);
+            this.Tire.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.Tire.Name = "Tire";
             this.Tire.Size = new System.Drawing.Size(100, 20);
             this.Tire.TabIndex = 45;
@@ -1240,6 +1370,11 @@
             // MaxBattery
             // 
             this.MaxBattery.Location = new System.Drawing.Point(152, 58);
+            this.MaxBattery.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MaxBattery.Name = "MaxBattery";
             this.MaxBattery.Size = new System.Drawing.Size(100, 20);
             this.MaxBattery.TabIndex = 44;
@@ -1247,6 +1382,11 @@
             // MinBattery
             // 
             this.MinBattery.Location = new System.Drawing.Point(152, 32);
+            this.MinBattery.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MinBattery.Name = "MinBattery";
             this.MinBattery.Size = new System.Drawing.Size(100, 20);
             this.MinBattery.TabIndex = 43;
@@ -1254,6 +1394,11 @@
             // Battery
             // 
             this.Battery.Location = new System.Drawing.Point(152, 6);
+            this.Battery.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.Battery.Name = "Battery";
             this.Battery.Size = new System.Drawing.Size(100, 20);
             this.Battery.TabIndex = 42;
@@ -1448,6 +1593,11 @@
             // MaxDropsB
             // 
             this.MaxDropsB.Location = new System.Drawing.Point(618, 136);
+            this.MaxDropsB.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MaxDropsB.Name = "MaxDropsB";
             this.MaxDropsB.Size = new System.Drawing.Size(100, 20);
             this.MaxDropsB.TabIndex = 124;
@@ -1455,6 +1605,11 @@
             // MinDropsB
             // 
             this.MinDropsB.Location = new System.Drawing.Point(618, 110);
+            this.MinDropsB.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MinDropsB.Name = "MinDropsB";
             this.MinDropsB.Size = new System.Drawing.Size(100, 20);
             this.MinDropsB.TabIndex = 123;
@@ -1462,6 +1617,11 @@
             // MaxDropsM
             // 
             this.MaxDropsM.Location = new System.Drawing.Point(618, 84);
+            this.MaxDropsM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MaxDropsM.Name = "MaxDropsM";
             this.MaxDropsM.Size = new System.Drawing.Size(100, 20);
             this.MaxDropsM.TabIndex = 122;
@@ -1469,6 +1629,11 @@
             // MinDropsM
             // 
             this.MinDropsM.Location = new System.Drawing.Point(618, 58);
+            this.MinDropsM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MinDropsM.Name = "MinDropsM";
             this.MinDropsM.Size = new System.Drawing.Size(100, 20);
             this.MinDropsM.TabIndex = 121;
@@ -1476,6 +1641,11 @@
             // MaxDrops
             // 
             this.MaxDrops.Location = new System.Drawing.Point(618, 32);
+            this.MaxDrops.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MaxDrops.Name = "MaxDrops";
             this.MaxDrops.Size = new System.Drawing.Size(100, 20);
             this.MaxDrops.TabIndex = 120;
@@ -1483,6 +1653,11 @@
             // MinDrops
             // 
             this.MinDrops.Location = new System.Drawing.Point(618, 6);
+            this.MinDrops.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MinDrops.Name = "MinDrops";
             this.MinDrops.Size = new System.Drawing.Size(100, 20);
             this.MinDrops.TabIndex = 119;
@@ -1490,6 +1665,11 @@
             // ExperienceFMM
             // 
             this.ExperienceFMM.Location = new System.Drawing.Point(392, 214);
+            this.ExperienceFMM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.ExperienceFMM.Name = "ExperienceFMM";
             this.ExperienceFMM.Size = new System.Drawing.Size(100, 20);
             this.ExperienceFMM.TabIndex = 118;
@@ -1497,6 +1677,11 @@
             // ExperienceBM
             // 
             this.ExperienceBM.Location = new System.Drawing.Point(392, 188);
+            this.ExperienceBM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.ExperienceBM.Name = "ExperienceBM";
             this.ExperienceBM.Size = new System.Drawing.Size(100, 20);
             this.ExperienceBM.TabIndex = 117;
@@ -1504,6 +1689,11 @@
             // ArmorM
             // 
             this.ArmorM.Location = new System.Drawing.Point(392, 162);
+            this.ArmorM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.ArmorM.Name = "ArmorM";
             this.ArmorM.Size = new System.Drawing.Size(100, 20);
             this.ArmorM.TabIndex = 116;
@@ -1511,6 +1701,11 @@
             // DamageM
             // 
             this.DamageM.Location = new System.Drawing.Point(392, 136);
+            this.DamageM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.DamageM.Name = "DamageM";
             this.DamageM.Size = new System.Drawing.Size(100, 20);
             this.DamageM.TabIndex = 115;
@@ -1518,6 +1713,11 @@
             // RespawnB
             // 
             this.RespawnB.Location = new System.Drawing.Point(392, 110);
+            this.RespawnB.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.RespawnB.Name = "RespawnB";
             this.RespawnB.Size = new System.Drawing.Size(100, 20);
             this.RespawnB.TabIndex = 114;
@@ -1525,6 +1725,11 @@
             // RespawnN
             // 
             this.RespawnN.Location = new System.Drawing.Point(392, 84);
+            this.RespawnN.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.RespawnN.Name = "RespawnN";
             this.RespawnN.Size = new System.Drawing.Size(100, 20);
             this.RespawnN.TabIndex = 113;
@@ -1532,6 +1737,11 @@
             // RespawnD
             // 
             this.RespawnD.Location = new System.Drawing.Point(392, 58);
+            this.RespawnD.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.RespawnD.Name = "RespawnD";
             this.RespawnD.Size = new System.Drawing.Size(100, 20);
             this.RespawnD.TabIndex = 112;
@@ -1539,6 +1749,11 @@
             // Fire
             // 
             this.Fire.Location = new System.Drawing.Point(392, 32);
+            this.Fire.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.Fire.Name = "Fire";
             this.Fire.Size = new System.Drawing.Size(100, 20);
             this.Fire.TabIndex = 111;
@@ -1546,6 +1761,11 @@
             // Wind
             // 
             this.Wind.Location = new System.Drawing.Point(392, 6);
+            this.Wind.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.Wind.Name = "Wind";
             this.Wind.Size = new System.Drawing.Size(100, 20);
             this.Wind.TabIndex = 110;
@@ -1553,6 +1773,11 @@
             // Electric
             // 
             this.Electric.Location = new System.Drawing.Point(126, 214);
+            this.Electric.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.Electric.Name = "Electric";
             this.Electric.Size = new System.Drawing.Size(100, 20);
             this.Electric.TabIndex = 109;
@@ -1560,6 +1785,11 @@
             // Spirit
             // 
             this.Spirit.Location = new System.Drawing.Point(126, 188);
+            this.Spirit.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.Spirit.Name = "Spirit";
             this.Spirit.Size = new System.Drawing.Size(100, 20);
             this.Spirit.TabIndex = 108;
@@ -1567,6 +1797,11 @@
             // Acid
             // 
             this.Acid.Location = new System.Drawing.Point(126, 162);
+            this.Acid.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.Acid.Name = "Acid";
             this.Acid.Size = new System.Drawing.Size(100, 20);
             this.Acid.TabIndex = 107;
@@ -1574,6 +1809,11 @@
             // Burner
             // 
             this.Burner.Location = new System.Drawing.Point(126, 136);
+            this.Burner.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.Burner.Name = "Burner";
             this.Burner.Size = new System.Drawing.Size(100, 20);
             this.Burner.TabIndex = 106;
@@ -1581,6 +1821,11 @@
             // Flanker
             // 
             this.Flanker.Location = new System.Drawing.Point(126, 110);
+            this.Flanker.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.Flanker.Name = "Flanker";
             this.Flanker.Size = new System.Drawing.Size(100, 20);
             this.Flanker.TabIndex = 105;
@@ -1588,6 +1833,11 @@
             // Sprinter
             // 
             this.Sprinter.Location = new System.Drawing.Point(126, 84);
+            this.Sprinter.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.Sprinter.Name = "Sprinter";
             this.Sprinter.Size = new System.Drawing.Size(100, 20);
             this.Sprinter.TabIndex = 104;
@@ -1595,6 +1845,11 @@
             // Crawler
             // 
             this.Crawler.Location = new System.Drawing.Point(126, 58);
+            this.Crawler.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.Crawler.Name = "Crawler";
             this.Crawler.Size = new System.Drawing.Size(100, 20);
             this.Crawler.TabIndex = 103;
@@ -1602,6 +1857,11 @@
             // LootC
             // 
             this.LootC.Location = new System.Drawing.Point(126, 32);
+            this.LootC.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.LootC.Name = "LootC";
             this.LootC.Size = new System.Drawing.Size(100, 20);
             this.LootC.TabIndex = 102;
@@ -1609,6 +1869,11 @@
             // SpawnCZ
             // 
             this.SpawnCZ.Location = new System.Drawing.Point(126, 6);
+            this.SpawnCZ.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.SpawnCZ.Name = "SpawnCZ";
             this.SpawnCZ.Size = new System.Drawing.Size(100, 20);
             this.SpawnCZ.TabIndex = 101;
@@ -1879,6 +2144,11 @@
             // InstancesIA
             // 
             this.InstancesIA.Location = new System.Drawing.Point(131, 188);
+            this.InstancesIA.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.InstancesIA.Name = "InstancesIA";
             this.InstancesIA.Size = new System.Drawing.Size(100, 20);
             this.InstancesIA.TabIndex = 114;
@@ -1886,6 +2156,11 @@
             // InstancesLA
             // 
             this.InstancesLA.Location = new System.Drawing.Point(131, 162);
+            this.InstancesLA.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.InstancesLA.Name = "InstancesLA";
             this.InstancesLA.Size = new System.Drawing.Size(100, 20);
             this.InstancesLA.TabIndex = 113;
@@ -1893,6 +2168,11 @@
             // InstancesMA
             // 
             this.InstancesMA.Location = new System.Drawing.Point(130, 136);
+            this.InstancesMA.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.InstancesMA.Name = "InstancesMA";
             this.InstancesMA.Size = new System.Drawing.Size(100, 20);
             this.InstancesMA.TabIndex = 112;
@@ -1900,6 +2180,11 @@
             // InstancesSA
             // 
             this.InstancesSA.Location = new System.Drawing.Point(130, 110);
+            this.InstancesSA.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.InstancesSA.Name = "InstancesSA";
             this.InstancesSA.Size = new System.Drawing.Size(100, 20);
             this.InstancesSA.TabIndex = 111;
@@ -1907,6 +2192,11 @@
             // InstancesTA
             // 
             this.InstancesTA.Location = new System.Drawing.Point(130, 84);
+            this.InstancesTA.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.InstancesTA.Name = "InstancesTA";
             this.InstancesTA.Size = new System.Drawing.Size(100, 20);
             this.InstancesTA.TabIndex = 110;
@@ -1914,6 +2204,11 @@
             // ArmorMA
             // 
             this.ArmorMA.Location = new System.Drawing.Point(130, 58);
+            this.ArmorMA.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.ArmorMA.Name = "ArmorMA";
             this.ArmorMA.Size = new System.Drawing.Size(100, 20);
             this.ArmorMA.TabIndex = 109;
@@ -1921,6 +2216,11 @@
             // DamageMA
             // 
             this.DamageMA.Location = new System.Drawing.Point(130, 32);
+            this.DamageMA.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.DamageMA.Name = "DamageMA";
             this.DamageMA.Size = new System.Drawing.Size(100, 20);
             this.DamageMA.TabIndex = 108;
@@ -1928,6 +2228,11 @@
             // RespawnA
             // 
             this.RespawnA.Location = new System.Drawing.Point(130, 6);
+            this.RespawnA.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.RespawnA.Name = "RespawnA";
             this.RespawnA.Size = new System.Drawing.Size(100, 20);
             this.RespawnA.TabIndex = 107;
@@ -2034,6 +2339,11 @@
             // MeleeDMS
             // 
             this.MeleeDMS.Location = new System.Drawing.Point(496, 110);
+            this.MeleeDMS.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MeleeDMS.Name = "MeleeDMS";
             this.MeleeDMS.Size = new System.Drawing.Size(100, 20);
             this.MeleeDMS.TabIndex = 118;
@@ -2041,6 +2351,11 @@
             // GunDMS
             // 
             this.GunDMS.Location = new System.Drawing.Point(496, 84);
+            this.GunDMS.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.GunDMS.Name = "GunDMS";
             this.GunDMS.Size = new System.Drawing.Size(100, 20);
             this.GunDMS.TabIndex = 117;
@@ -2048,6 +2363,11 @@
             // ArmorMS
             // 
             this.ArmorMS.Location = new System.Drawing.Point(496, 58);
+            this.ArmorMS.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.ArmorMS.Name = "ArmorMS";
             this.ArmorMS.Size = new System.Drawing.Size(100, 20);
             this.ArmorMS.TabIndex = 116;
@@ -2055,6 +2375,11 @@
             // DecayTS
             // 
             this.DecayTS.Location = new System.Drawing.Point(496, 32);
+            this.DecayTS.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.DecayTS.Name = "DecayTS";
             this.DecayTS.Size = new System.Drawing.Size(100, 20);
             this.DecayTS.TabIndex = 115;
@@ -2062,6 +2387,11 @@
             // MeleeDMB
             // 
             this.MeleeDMB.Location = new System.Drawing.Point(138, 110);
+            this.MeleeDMB.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MeleeDMB.Name = "MeleeDMB";
             this.MeleeDMB.Size = new System.Drawing.Size(100, 20);
             this.MeleeDMB.TabIndex = 114;
@@ -2069,6 +2399,11 @@
             // GunDMB
             // 
             this.GunDMB.Location = new System.Drawing.Point(138, 84);
+            this.GunDMB.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.GunDMB.Name = "GunDMB";
             this.GunDMB.Size = new System.Drawing.Size(100, 20);
             this.GunDMB.TabIndex = 113;
@@ -2076,6 +2411,11 @@
             // ArmorMB
             // 
             this.ArmorMB.Location = new System.Drawing.Point(138, 58);
+            this.ArmorMB.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.ArmorMB.Name = "ArmorMB";
             this.ArmorMB.Size = new System.Drawing.Size(100, 20);
             this.ArmorMB.TabIndex = 112;
@@ -2083,6 +2423,11 @@
             // DecayTB
             // 
             this.DecayTB.Location = new System.Drawing.Point(138, 32);
+            this.DecayTB.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.DecayTB.Name = "DecayTB";
             this.DecayTB.Size = new System.Drawing.Size(100, 20);
             this.DecayTB.TabIndex = 111;
@@ -2243,6 +2588,11 @@
             // LoseIE
             // 
             this.LoseIE.Location = new System.Drawing.Point(537, 266);
+            this.LoseIE.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.LoseIE.Name = "LoseIE";
             this.LoseIE.Size = new System.Drawing.Size(100, 20);
             this.LoseIE.TabIndex = 130;
@@ -2250,6 +2600,11 @@
             // LoseIP
             // 
             this.LoseIP.Location = new System.Drawing.Point(537, 240);
+            this.LoseIP.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.LoseIP.Name = "LoseIP";
             this.LoseIP.Size = new System.Drawing.Size(100, 20);
             this.LoseIP.TabIndex = 129;
@@ -2257,6 +2612,11 @@
             // LoseSE
             // 
             this.LoseSE.Location = new System.Drawing.Point(537, 214);
+            this.LoseSE.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.LoseSE.Name = "LoseSE";
             this.LoseSE.Size = new System.Drawing.Size(100, 20);
             this.LoseSE.TabIndex = 128;
@@ -2264,6 +2624,11 @@
             // LoseSP
             // 
             this.LoseSP.Location = new System.Drawing.Point(537, 188);
+            this.LoseSP.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.LoseSP.Name = "LoseSP";
             this.LoseSP.Size = new System.Drawing.Size(100, 20);
             this.LoseSP.TabIndex = 127;
@@ -2271,6 +2636,11 @@
             // RayAD
             // 
             this.RayAD.Location = new System.Drawing.Point(537, 162);
+            this.RayAD.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.RayAD.Name = "RayAD";
             this.RayAD.Size = new System.Drawing.Size(100, 20);
             this.RayAD.TabIndex = 126;
@@ -2278,6 +2648,11 @@
             // DetectRM
             // 
             this.DetectRM.Location = new System.Drawing.Point(537, 136);
+            this.DetectRM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.DetectRM.Name = "DetectRM";
             this.DetectRM.Size = new System.Drawing.Size(100, 20);
             this.DetectRM.TabIndex = 125;
@@ -2285,6 +2660,11 @@
             // ExperienceM
             // 
             this.ExperienceM.Location = new System.Drawing.Point(537, 110);
+            this.ExperienceM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.ExperienceM.Name = "ExperienceM";
             this.ExperienceM.Size = new System.Drawing.Size(100, 20);
             this.ExperienceM.TabIndex = 124;
@@ -2292,6 +2672,11 @@
             // ArmorMP
             // 
             this.ArmorMP.Location = new System.Drawing.Point(537, 84);
+            this.ArmorMP.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.ArmorMP.Name = "ArmorMP";
             this.ArmorMP.Size = new System.Drawing.Size(100, 20);
             this.ArmorMP.TabIndex = 123;
@@ -2299,6 +2684,11 @@
             // BleedRT
             // 
             this.BleedRT.Location = new System.Drawing.Point(537, 58);
+            this.BleedRT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.BleedRT.Name = "BleedRT";
             this.BleedRT.Size = new System.Drawing.Size(100, 20);
             this.BleedRT.TabIndex = 122;
@@ -2306,6 +2696,11 @@
             // BleedDT
             // 
             this.BleedDT.Location = new System.Drawing.Point(537, 32);
+            this.BleedDT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.BleedDT.Name = "BleedDT";
             this.BleedDT.Size = new System.Drawing.Size(100, 20);
             this.BleedDT.TabIndex = 121;
@@ -2313,6 +2708,11 @@
             // LegT
             // 
             this.LegT.Location = new System.Drawing.Point(537, 6);
+            this.LegT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.LegT.Name = "LegT";
             this.LegT.Size = new System.Drawing.Size(100, 20);
             this.LegT.TabIndex = 120;
@@ -2320,6 +2720,11 @@
             // VirusDT
             // 
             this.VirusDT.Location = new System.Drawing.Point(197, 240);
+            this.VirusDT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.VirusDT.Name = "VirusDT";
             this.VirusDT.Size = new System.Drawing.Size(100, 20);
             this.VirusDT.TabIndex = 119;
@@ -2327,6 +2732,11 @@
             // VirusT
             // 
             this.VirusT.Location = new System.Drawing.Point(197, 214);
+            this.VirusT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.VirusT.Name = "VirusT";
             this.VirusT.Size = new System.Drawing.Size(100, 20);
             this.VirusT.TabIndex = 118;
@@ -2334,6 +2744,11 @@
             // VirusI
             // 
             this.VirusI.Location = new System.Drawing.Point(197, 188);
+            this.VirusI.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.VirusI.Name = "VirusI";
             this.VirusI.Size = new System.Drawing.Size(100, 20);
             this.VirusI.TabIndex = 117;
@@ -2341,6 +2756,11 @@
             // WaterDT
             // 
             this.WaterDT.Location = new System.Drawing.Point(197, 162);
+            this.WaterDT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.WaterDT.Name = "WaterDT";
             this.WaterDT.Size = new System.Drawing.Size(100, 20);
             this.WaterDT.TabIndex = 116;
@@ -2348,6 +2768,11 @@
             // WaterT
             // 
             this.WaterT.Location = new System.Drawing.Point(197, 136);
+            this.WaterT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.WaterT.Name = "WaterT";
             this.WaterT.Size = new System.Drawing.Size(100, 20);
             this.WaterT.TabIndex = 115;
@@ -2355,6 +2780,11 @@
             // FoodDT
             // 
             this.FoodDT.Location = new System.Drawing.Point(197, 110);
+            this.FoodDT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.FoodDT.Name = "FoodDT";
             this.FoodDT.Size = new System.Drawing.Size(100, 20);
             this.FoodDT.TabIndex = 114;
@@ -2362,6 +2792,11 @@
             // FoodT
             // 
             this.FoodT.Location = new System.Drawing.Point(197, 84);
+            this.FoodT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.FoodT.Name = "FoodT";
             this.FoodT.Size = new System.Drawing.Size(100, 20);
             this.FoodT.TabIndex = 113;
@@ -2369,6 +2804,11 @@
             // HealthRegenT
             // 
             this.HealthRegenT.Location = new System.Drawing.Point(197, 58);
+            this.HealthRegenT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.HealthRegenT.Name = "HealthRegenT";
             this.HealthRegenT.Size = new System.Drawing.Size(100, 20);
             this.HealthRegenT.TabIndex = 112;
@@ -2376,6 +2816,11 @@
             // HealthRegenMW
             // 
             this.HealthRegenMW.Location = new System.Drawing.Point(197, 32);
+            this.HealthRegenMW.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.HealthRegenMW.Name = "HealthRegenMW";
             this.HealthRegenMW.Size = new System.Drawing.Size(100, 20);
             this.HealthRegenMW.TabIndex = 111;
@@ -2383,6 +2828,11 @@
             // HealthRegenMF
             // 
             this.HealthRegenMF.Location = new System.Drawing.Point(197, 6);
+            this.HealthRegenMF.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.HealthRegenMF.Name = "HealthRegenMF";
             this.HealthRegenMF.Size = new System.Drawing.Size(100, 20);
             this.HealthRegenMF.TabIndex = 110;
@@ -2721,6 +3171,11 @@
             // RubbleRM
             // 
             this.RubbleRM.Location = new System.Drawing.Point(507, 136);
+            this.RubbleRM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.RubbleRM.Name = "RubbleRM";
             this.RubbleRM.Size = new System.Drawing.Size(100, 20);
             this.RubbleRM.TabIndex = 124;
@@ -2728,6 +3183,11 @@
             // ResourceRM
             // 
             this.ResourceRM.Location = new System.Drawing.Point(507, 110);
+            this.ResourceRM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.ResourceRM.Name = "ResourceRM";
             this.ResourceRM.Size = new System.Drawing.Size(100, 20);
             this.ResourceRM.TabIndex = 123;
@@ -2735,6 +3195,11 @@
             // WaterRM
             // 
             this.WaterRM.Location = new System.Drawing.Point(507, 84);
+            this.WaterRM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.WaterRM.Name = "WaterRM";
             this.WaterRM.Size = new System.Drawing.Size(100, 20);
             this.WaterRM.TabIndex = 122;
@@ -2742,6 +3207,11 @@
             // FuelRM
             // 
             this.FuelRM.Location = new System.Drawing.Point(507, 58);
+            this.FuelRM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.FuelRM.Name = "FuelRM";
             this.FuelRM.Size = new System.Drawing.Size(100, 20);
             this.FuelRM.TabIndex = 121;
@@ -2749,6 +3219,11 @@
             // BSRM
             // 
             this.BSRM.Location = new System.Drawing.Point(507, 32);
+            this.BSRM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.BSRM.Name = "BSRM";
             this.BSRM.Size = new System.Drawing.Size(100, 20);
             this.BSRM.TabIndex = 120;
@@ -2756,6 +3231,11 @@
             // GroupMM
             // 
             this.GroupMM.Location = new System.Drawing.Point(142, 136);
+            this.GroupMM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.GroupMM.Name = "GroupMM";
             this.GroupMM.Size = new System.Drawing.Size(100, 20);
             this.GroupMM.TabIndex = 119;
@@ -2763,6 +3243,11 @@
             // HomeT
             // 
             this.HomeT.Location = new System.Drawing.Point(142, 110);
+            this.HomeT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.HomeT.Name = "HomeT";
             this.HomeT.Size = new System.Drawing.Size(100, 20);
             this.HomeT.TabIndex = 118;
@@ -2770,6 +3255,11 @@
             // RespawnT
             // 
             this.RespawnT.Location = new System.Drawing.Point(142, 84);
+            this.RespawnT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.RespawnT.Name = "RespawnT";
             this.RespawnT.Size = new System.Drawing.Size(100, 20);
             this.RespawnT.TabIndex = 117;
@@ -2777,6 +3267,11 @@
             // ExitT
             // 
             this.ExitT.Location = new System.Drawing.Point(142, 58);
+            this.ExitT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.ExitT.Name = "ExitT";
             this.ExitT.Size = new System.Drawing.Size(100, 20);
             this.ExitT.TabIndex = 116;
@@ -2784,6 +3279,11 @@
             // RepairLM
             // 
             this.RepairLM.Location = new System.Drawing.Point(142, 32);
+            this.RepairLM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.RepairLM.Name = "RepairLM";
             this.RepairLM.Size = new System.Drawing.Size(100, 20);
             this.RepairLM.TabIndex = 115;
@@ -3093,6 +3593,11 @@
             // CircleSI
             // 
             this.CircleSI.Location = new System.Drawing.Point(515, 292);
+            this.CircleSI.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.CircleSI.Name = "CircleSI";
             this.CircleSI.Size = new System.Drawing.Size(100, 20);
             this.CircleSI.TabIndex = 154;
@@ -3100,6 +3605,11 @@
             // CircleSL
             // 
             this.CircleSL.Location = new System.Drawing.Point(515, 266);
+            this.CircleSL.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.CircleSL.Name = "CircleSL";
             this.CircleSL.Size = new System.Drawing.Size(100, 20);
             this.CircleSL.TabIndex = 153;
@@ -3107,6 +3617,11 @@
             // CircleSM
             // 
             this.CircleSM.Location = new System.Drawing.Point(515, 240);
+            this.CircleSM.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.CircleSM.Name = "CircleSM";
             this.CircleSM.Size = new System.Drawing.Size(100, 20);
             this.CircleSM.TabIndex = 152;
@@ -3114,6 +3629,11 @@
             // CircleSS
             // 
             this.CircleSS.Location = new System.Drawing.Point(515, 214);
+            this.CircleSS.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.CircleSS.Name = "CircleSS";
             this.CircleSS.Size = new System.Drawing.Size(100, 20);
             this.CircleSS.TabIndex = 151;
@@ -3121,6 +3641,11 @@
             // CircleST
             // 
             this.CircleST.Location = new System.Drawing.Point(515, 188);
+            this.CircleST.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.CircleST.Name = "CircleST";
             this.CircleST.Size = new System.Drawing.Size(100, 20);
             this.CircleST.TabIndex = 150;
@@ -3128,6 +3653,11 @@
             // CirclePT
             // 
             this.CirclePT.Location = new System.Drawing.Point(515, 162);
+            this.CirclePT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.CirclePT.Name = "CirclePT";
             this.CirclePT.Size = new System.Drawing.Size(100, 20);
             this.CirclePT.TabIndex = 149;
@@ -3135,6 +3665,11 @@
             // CircleDT
             // 
             this.CircleDT.Location = new System.Drawing.Point(515, 136);
+            this.CircleDT.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.CircleDT.Name = "CircleDT";
             this.CircleDT.Size = new System.Drawing.Size(100, 20);
             this.CircleDT.TabIndex = 148;
@@ -3142,6 +3677,11 @@
             // TimerR
             // 
             this.TimerR.Location = new System.Drawing.Point(515, 110);
+            this.TimerR.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.TimerR.Name = "TimerR";
             this.TimerR.Size = new System.Drawing.Size(100, 20);
             this.TimerR.TabIndex = 147;
@@ -3149,6 +3689,11 @@
             // TimerF
             // 
             this.TimerF.Location = new System.Drawing.Point(515, 84);
+            this.TimerF.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.TimerF.Name = "TimerF";
             this.TimerF.Size = new System.Drawing.Size(100, 20);
             this.TimerF.TabIndex = 146;
@@ -3156,6 +3701,11 @@
             // ArenaCD
             // 
             this.ArenaCD.Location = new System.Drawing.Point(515, 58);
+            this.ArenaCD.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.ArenaCD.Name = "ArenaCD";
             this.ArenaCD.Size = new System.Drawing.Size(100, 20);
             this.ArenaCD.TabIndex = 145;
@@ -3163,6 +3713,11 @@
             // CircleDMG
             // 
             this.CircleDMG.Location = new System.Drawing.Point(515, 32);
+            this.CircleDMG.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.CircleDMG.Name = "CircleDMG";
             this.CircleDMG.Size = new System.Drawing.Size(100, 20);
             this.CircleDMG.TabIndex = 144;
@@ -3170,6 +3725,11 @@
             // MinAP
             // 
             this.MinAP.Location = new System.Drawing.Point(515, 6);
+            this.MinAP.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MinAP.Name = "MinAP";
             this.MinAP.Size = new System.Drawing.Size(100, 20);
             this.MinAP.TabIndex = 143;
@@ -3177,6 +3737,11 @@
             // AirdropF
             // 
             this.AirdropF.Location = new System.Drawing.Point(156, 292);
+            this.AirdropF.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.AirdropF.Name = "AirdropF";
             this.AirdropF.Size = new System.Drawing.Size(100, 20);
             this.AirdropF.TabIndex = 142;
@@ -3184,6 +3749,11 @@
             // AirdropS
             // 
             this.AirdropS.Location = new System.Drawing.Point(156, 266);
+            this.AirdropS.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.AirdropS.Name = "AirdropS";
             this.AirdropS.Size = new System.Drawing.Size(100, 20);
             this.AirdropS.TabIndex = 141;
@@ -3191,6 +3761,11 @@
             // MaxAF
             // 
             this.MaxAF.Location = new System.Drawing.Point(156, 240);
+            this.MaxAF.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MaxAF.Name = "MaxAF";
             this.MaxAF.Size = new System.Drawing.Size(100, 20);
             this.MaxAF.TabIndex = 140;
@@ -3198,6 +3773,11 @@
             // MinAF
             // 
             this.MinAF.Location = new System.Drawing.Point(156, 214);
+            this.MinAF.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MinAF.Name = "MinAF";
             this.MinAF.Size = new System.Drawing.Size(100, 20);
             this.MinAF.TabIndex = 139;
@@ -3205,6 +3785,11 @@
             // MaxSD
             // 
             this.MaxSD.Location = new System.Drawing.Point(156, 188);
+            this.MaxSD.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MaxSD.Name = "MaxSD";
             this.MaxSD.Size = new System.Drawing.Size(100, 20);
             this.MaxSD.TabIndex = 138;
@@ -3212,6 +3797,11 @@
             // MinSD
             // 
             this.MinSD.Location = new System.Drawing.Point(156, 162);
+            this.MinSD.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MinSD.Name = "MinSD";
             this.MinSD.Size = new System.Drawing.Size(100, 20);
             this.MinSD.TabIndex = 137;
@@ -3219,6 +3809,11 @@
             // MaxSF
             // 
             this.MaxSF.Location = new System.Drawing.Point(156, 136);
+            this.MaxSF.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MaxSF.Name = "MaxSF";
             this.MaxSF.Size = new System.Drawing.Size(100, 20);
             this.MaxSF.TabIndex = 136;
@@ -3226,6 +3821,11 @@
             // MinSF
             // 
             this.MinSF.Location = new System.Drawing.Point(156, 110);
+            this.MinSF.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MinSF.Name = "MinSF";
             this.MinSF.Size = new System.Drawing.Size(100, 20);
             this.MinSF.TabIndex = 135;
@@ -3233,6 +3833,11 @@
             // MaxRD
             // 
             this.MaxRD.Location = new System.Drawing.Point(156, 84);
+            this.MaxRD.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MaxRD.Name = "MaxRD";
             this.MaxRD.Size = new System.Drawing.Size(100, 20);
             this.MaxRD.TabIndex = 134;
@@ -3240,6 +3845,11 @@
             // MinRD
             // 
             this.MinRD.Location = new System.Drawing.Point(156, 58);
+            this.MinRD.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MinRD.Name = "MinRD";
             this.MinRD.Size = new System.Drawing.Size(100, 20);
             this.MinRD.TabIndex = 133;
@@ -3247,6 +3857,11 @@
             // MaxRF
             // 
             this.MaxRF.Location = new System.Drawing.Point(156, 32);
+            this.MaxRF.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MaxRF.Name = "MaxRF";
             this.MaxRF.Size = new System.Drawing.Size(100, 20);
             this.MaxRF.TabIndex = 132;
@@ -3254,6 +3869,11 @@
             // MinRF
             // 
             this.MinRF.Location = new System.Drawing.Point(156, 6);
+            this.MinRF.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.MinRF.Name = "MinRF";
             this.MinRF.Size = new System.Drawing.Size(100, 20);
             this.MinRF.TabIndex = 131;
@@ -3553,7 +4173,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.CrateBF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MagBM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MagBF)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GumBM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GunBM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GunBF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.QualityM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.QualityF)).EndInit();
@@ -3757,7 +4377,7 @@
         private System.Windows.Forms.NumericUpDown CrateBF;
         private System.Windows.Forms.NumericUpDown MagBM;
         private System.Windows.Forms.NumericUpDown MagBF;
-        private System.Windows.Forms.NumericUpDown GumBM;
+        private System.Windows.Forms.NumericUpDown GunBM;
         private System.Windows.Forms.NumericUpDown GunBF;
         private System.Windows.Forms.NumericUpDown QualityM;
         private System.Windows.Forms.NumericUpDown QualityF;
