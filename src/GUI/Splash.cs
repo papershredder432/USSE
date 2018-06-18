@@ -9,11 +9,14 @@ namespace papershredder.Programs.USSE.GUI
         {
             InitializeComponent();
 
-            // Starts a thread to close this after 5 seconds.
             new Thread(() =>
             {
                 Thread.Sleep(5000);
-                Close();
+
+                Invoke((MethodInvoker)delegate
+                {
+                    Close();
+                });
             }).Start();
         }
     }

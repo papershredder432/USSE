@@ -1,4 +1,5 @@
-﻿using System;
+﻿using papershredder.Programs.USSE.GUI;
+using System;
 using System.Windows.Forms;
 
 namespace papershredder.Programs.USSE
@@ -13,7 +14,7 @@ namespace papershredder.Programs.USSE
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new USSE());
+            Application.Run(new Editor());
         }
     }
 }

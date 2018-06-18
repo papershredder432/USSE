@@ -28,36 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
-            this.pictureBoxUSSE = new System.Windows.Forms.PictureBox();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
             this.panelBack = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUSSE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.pictureBoxUSSE = new System.Windows.Forms.PictureBox();
             this.panelBack.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUSSE)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBoxUSSE
-            // 
-            this.pictureBoxUSSE.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBoxUSSE.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxUSSE.Image")));
-            this.pictureBoxUSSE.Location = new System.Drawing.Point(92, 3);
-            this.pictureBoxUSSE.Name = "pictureBoxUSSE";
-            this.pictureBoxUSSE.Size = new System.Drawing.Size(687, 75);
-            this.pictureBoxUSSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxUSSE.TabIndex = 1;
-            this.pictureBoxUSSE.TabStop = false;
-            // 
-            // pictureBoxLogo
-            // 
-            this.pictureBoxLogo.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pictureBoxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxLogo.Image")));
-            this.pictureBoxLogo.Location = new System.Drawing.Point(11, 3);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(75, 75);
-            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxLogo.TabIndex = 2;
-            this.pictureBoxLogo.TabStop = false;
             // 
             // panelBack
             // 
@@ -69,20 +46,41 @@
             this.panelBack.Size = new System.Drawing.Size(790, 88);
             this.panelBack.TabIndex = 3;
             // 
-            // USSESplash
+            // pictureBoxLogo
+            // 
+            this.pictureBoxLogo.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBoxLogo.Image = global::papershredder.Programs.USSE.Properties.Resources.Unturned;
+            this.pictureBoxLogo.Location = new System.Drawing.Point(11, 3);
+            this.pictureBoxLogo.Name = "pictureBoxLogo";
+            this.pictureBoxLogo.Size = new System.Drawing.Size(75, 75);
+            this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxLogo.TabIndex = 2;
+            this.pictureBoxLogo.TabStop = false;
+            // 
+            // pictureBoxUSSE
+            // 
+            this.pictureBoxUSSE.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.pictureBoxUSSE.Image = global::papershredder.Programs.USSE.Properties.Resources.USSE;
+            this.pictureBoxUSSE.Location = new System.Drawing.Point(92, 3);
+            this.pictureBoxUSSE.Name = "pictureBoxUSSE";
+            this.pictureBoxUSSE.Size = new System.Drawing.Size(687, 75);
+            this.pictureBoxUSSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxUSSE.TabIndex = 1;
+            this.pictureBoxUSSE.TabStop = false;
+            // 
+            // Splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(790, 85);
             this.Controls.Add(this.panelBack);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "USSESplash";
+            this.Name = "Splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "USSESplash";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUSSE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
             this.panelBack.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUSSE)).EndInit();
             this.ResumeLayout(false);
 
         }
