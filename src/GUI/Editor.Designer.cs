@@ -41,6 +41,7 @@
             this.Hard = new System.Windows.Forms.CheckBox();
             this.Tabs = new System.Windows.Forms.TabControl();
             this.ServerBrowser = new System.Windows.Forms.TabPage();
+            this.DescriptionF = new System.Windows.Forms.RichTextBox();
             this.Packets = new System.Windows.Forms.NumericUpDown();
             this.TimeoutG = new System.Windows.Forms.NumericUpDown();
             this.TimeoutQ = new System.Windows.Forms.NumericUpDown();
@@ -54,7 +55,6 @@
             this.Server = new System.Windows.Forms.TextBox();
             this.Thumbnail = new System.Windows.Forms.TextBox();
             this.DescriptionH = new System.Windows.Forms.TextBox();
-            this.DescriptionF = new System.Windows.Forms.TextBox();
             this.DescriptionL = new System.Windows.Forms.TextBox();
             this.BrowserIcon = new System.Windows.Forms.TextBox();
             this.TXT_DescriptionF = new System.Windows.Forms.TextBox();
@@ -302,7 +302,7 @@
             this.CircleDT = new System.Windows.Forms.NumericUpDown();
             this.TimerR = new System.Windows.Forms.NumericUpDown();
             this.TimerF = new System.Windows.Forms.NumericUpDown();
-            this.ArenaCD = new System.Windows.Forms.NumericUpDown();
+            this.ArenaCT = new System.Windows.Forms.NumericUpDown();
             this.CircleDMG = new System.Windows.Forms.NumericUpDown();
             this.MinAP = new System.Windows.Forms.NumericUpDown();
             this.AirdropF = new System.Windows.Forms.NumericUpDown();
@@ -326,7 +326,7 @@
             this.TXT_CircleDT = new System.Windows.Forms.TextBox();
             this.TXT_TimerR = new System.Windows.Forms.TextBox();
             this.TXT_TimerF = new System.Windows.Forms.TextBox();
-            this.TXT_ArenaCD = new System.Windows.Forms.TextBox();
+            this.TXT_ArenaCT = new System.Windows.Forms.TextBox();
             this.TXT_CircleDMG = new System.Windows.Forms.TextBox();
             this.TXT_MinAP = new System.Windows.Forms.TextBox();
             this.TXT_AirdropF = new System.Windows.Forms.TextBox();
@@ -472,7 +472,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.CircleDT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TimerR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TimerF)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ArenaCD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ArenaCT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CircleDMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinAP)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AirdropF)).BeginInit();
@@ -666,6 +666,7 @@
             // 
             // ServerBrowser
             // 
+            this.ServerBrowser.Controls.Add(this.DescriptionF);
             this.ServerBrowser.Controls.Add(this.Packets);
             this.ServerBrowser.Controls.Add(this.TimeoutG);
             this.ServerBrowser.Controls.Add(this.TimeoutQ);
@@ -679,7 +680,6 @@
             this.ServerBrowser.Controls.Add(this.Server);
             this.ServerBrowser.Controls.Add(this.Thumbnail);
             this.ServerBrowser.Controls.Add(this.DescriptionH);
-            this.ServerBrowser.Controls.Add(this.DescriptionF);
             this.ServerBrowser.Controls.Add(this.DescriptionL);
             this.ServerBrowser.Controls.Add(this.BrowserIcon);
             this.ServerBrowser.Controls.Add(this.TXT_DescriptionF);
@@ -694,6 +694,14 @@
             this.ServerBrowser.TabIndex = 0;
             this.ServerBrowser.Text = "Server & Browser";
             this.ServerBrowser.UseVisualStyleBackColor = true;
+            // 
+            // DescriptionF
+            // 
+            this.DescriptionF.Location = new System.Drawing.Point(7, 159);
+            this.DescriptionF.Name = "DescriptionF";
+            this.DescriptionF.Size = new System.Drawing.Size(275, 96);
+            this.DescriptionF.TabIndex = 66;
+            this.DescriptionF.Text = "";
             // 
             // Packets
             // 
@@ -815,49 +823,42 @@
             // 
             this.Thumbnail.Location = new System.Drawing.Point(99, 58);
             this.Thumbnail.Name = "Thumbnail";
-            this.Thumbnail.Size = new System.Drawing.Size(87, 20);
+            this.Thumbnail.Size = new System.Drawing.Size(183, 20);
             this.Thumbnail.TabIndex = 50;
             // 
             // DescriptionH
             // 
             this.DescriptionH.Location = new System.Drawing.Point(99, 84);
             this.DescriptionH.Name = "DescriptionH";
-            this.DescriptionH.Size = new System.Drawing.Size(87, 20);
+            this.DescriptionH.Size = new System.Drawing.Size(183, 20);
             this.DescriptionH.TabIndex = 49;
-            // 
-            // DescriptionF
-            // 
-            this.DescriptionF.Location = new System.Drawing.Point(99, 110);
-            this.DescriptionF.Name = "DescriptionF";
-            this.DescriptionF.Size = new System.Drawing.Size(87, 20);
-            this.DescriptionF.TabIndex = 48;
             // 
             // DescriptionL
             // 
-            this.DescriptionL.Location = new System.Drawing.Point(99, 136);
+            this.DescriptionL.Location = new System.Drawing.Point(99, 109);
             this.DescriptionL.Name = "DescriptionL";
-            this.DescriptionL.Size = new System.Drawing.Size(87, 20);
+            this.DescriptionL.Size = new System.Drawing.Size(183, 20);
             this.DescriptionL.TabIndex = 47;
             // 
             // BrowserIcon
             // 
             this.BrowserIcon.Location = new System.Drawing.Point(99, 32);
             this.BrowserIcon.Name = "BrowserIcon";
-            this.BrowserIcon.Size = new System.Drawing.Size(87, 20);
+            this.BrowserIcon.Size = new System.Drawing.Size(183, 20);
             this.BrowserIcon.TabIndex = 46;
             // 
             // TXT_DescriptionF
             // 
-            this.TXT_DescriptionF.Location = new System.Drawing.Point(6, 110);
+            this.TXT_DescriptionF.Location = new System.Drawing.Point(6, 135);
             this.TXT_DescriptionF.Name = "TXT_DescriptionF";
             this.TXT_DescriptionF.ReadOnly = true;
-            this.TXT_DescriptionF.Size = new System.Drawing.Size(87, 20);
+            this.TXT_DescriptionF.Size = new System.Drawing.Size(276, 20);
             this.TXT_DescriptionF.TabIndex = 45;
             this.TXT_DescriptionF.Text = "Decription Full";
             // 
             // TXT_DescriptionL
             // 
-            this.TXT_DescriptionL.Location = new System.Drawing.Point(6, 136);
+            this.TXT_DescriptionL.Location = new System.Drawing.Point(6, 109);
             this.TXT_DescriptionL.Name = "TXT_DescriptionL";
             this.TXT_DescriptionL.ReadOnly = true;
             this.TXT_DescriptionL.Size = new System.Drawing.Size(87, 20);
@@ -896,7 +897,7 @@
             this.Browser.Location = new System.Drawing.Point(6, 6);
             this.Browser.Name = "Browser";
             this.Browser.ReadOnly = true;
-            this.Browser.Size = new System.Drawing.Size(180, 20);
+            this.Browser.Size = new System.Drawing.Size(276, 20);
             this.Browser.TabIndex = 0;
             this.Browser.Text = "Browser";
             this.Browser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -3542,7 +3543,7 @@
             this.EventsTab.Controls.Add(this.CircleDT);
             this.EventsTab.Controls.Add(this.TimerR);
             this.EventsTab.Controls.Add(this.TimerF);
-            this.EventsTab.Controls.Add(this.ArenaCD);
+            this.EventsTab.Controls.Add(this.ArenaCT);
             this.EventsTab.Controls.Add(this.CircleDMG);
             this.EventsTab.Controls.Add(this.MinAP);
             this.EventsTab.Controls.Add(this.AirdropF);
@@ -3566,7 +3567,7 @@
             this.EventsTab.Controls.Add(this.TXT_CircleDT);
             this.EventsTab.Controls.Add(this.TXT_TimerR);
             this.EventsTab.Controls.Add(this.TXT_TimerF);
-            this.EventsTab.Controls.Add(this.TXT_ArenaCD);
+            this.EventsTab.Controls.Add(this.TXT_ArenaCT);
             this.EventsTab.Controls.Add(this.TXT_CircleDMG);
             this.EventsTab.Controls.Add(this.TXT_MinAP);
             this.EventsTab.Controls.Add(this.TXT_AirdropF);
@@ -3698,17 +3699,17 @@
             this.TimerF.Size = new System.Drawing.Size(100, 20);
             this.TimerF.TabIndex = 146;
             // 
-            // ArenaCD
+            // ArenaCT
             // 
-            this.ArenaCD.Location = new System.Drawing.Point(515, 58);
-            this.ArenaCD.Maximum = new decimal(new int[] {
+            this.ArenaCT.Location = new System.Drawing.Point(515, 58);
+            this.ArenaCT.Maximum = new decimal(new int[] {
             -1,
             0,
             0,
             0});
-            this.ArenaCD.Name = "ArenaCD";
-            this.ArenaCD.Size = new System.Drawing.Size(100, 20);
-            this.ArenaCD.TabIndex = 145;
+            this.ArenaCT.Name = "ArenaCT";
+            this.ArenaCT.Size = new System.Drawing.Size(100, 20);
+            this.ArenaCT.TabIndex = 145;
             // 
             // CircleDMG
             // 
@@ -3959,14 +3960,14 @@
             this.TXT_TimerF.TabIndex = 72;
             this.TXT_TimerF.Text = "Arena Final Timer";
             // 
-            // TXT_ArenaCD
+            // TXT_ArenaCT
             // 
-            this.TXT_ArenaCD.Location = new System.Drawing.Point(342, 58);
-            this.TXT_ArenaCD.Name = "TXT_ArenaCD";
-            this.TXT_ArenaCD.ReadOnly = true;
-            this.TXT_ArenaCD.Size = new System.Drawing.Size(167, 20);
-            this.TXT_ArenaCD.TabIndex = 71;
-            this.TXT_ArenaCD.Text = "Arena Clear Damage";
+            this.TXT_ArenaCT.Location = new System.Drawing.Point(342, 58);
+            this.TXT_ArenaCT.Name = "TXT_ArenaCT";
+            this.TXT_ArenaCT.ReadOnly = true;
+            this.TXT_ArenaCT.Size = new System.Drawing.Size(167, 20);
+            this.TXT_ArenaCT.TabIndex = 71;
+            this.TXT_ArenaCT.Text = "Arena Clear Timer";
             // 
             // TXT_CircleDMG
             // 
@@ -4289,7 +4290,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.CircleDT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TimerR)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TimerF)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ArenaCD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ArenaCT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CircleDMG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinAP)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AirdropF)).EndInit();
@@ -4347,8 +4348,6 @@
         private System.Windows.Forms.TextBox Server;
         private System.Windows.Forms.TextBox Thumbnail;
         private System.Windows.Forms.TextBox DescriptionH;
-        private System.Windows.Forms.TextBox DescriptionF;
-        private System.Windows.Forms.TextBox DescriptionL;
         private System.Windows.Forms.TextBox BrowserIcon;
         private System.Windows.Forms.TextBox TXT_DescriptionF;
         private System.Windows.Forms.TextBox TXT_DescriptionL;
@@ -4590,7 +4589,7 @@
         private System.Windows.Forms.NumericUpDown CircleDT;
         private System.Windows.Forms.NumericUpDown TimerR;
         private System.Windows.Forms.NumericUpDown TimerF;
-        private System.Windows.Forms.NumericUpDown ArenaCD;
+        private System.Windows.Forms.NumericUpDown ArenaCT;
         private System.Windows.Forms.NumericUpDown CircleDMG;
         private System.Windows.Forms.NumericUpDown MinAP;
         private System.Windows.Forms.NumericUpDown AirdropF;
@@ -4614,7 +4613,7 @@
         private System.Windows.Forms.TextBox TXT_CircleDT;
         private System.Windows.Forms.TextBox TXT_TimerR;
         private System.Windows.Forms.TextBox TXT_TimerF;
-        private System.Windows.Forms.TextBox TXT_ArenaCD;
+        private System.Windows.Forms.TextBox TXT_ArenaCT;
         private System.Windows.Forms.TextBox TXT_CircleDMG;
         private System.Windows.Forms.TextBox TXT_MinAP;
         private System.Windows.Forms.TextBox TXT_AirdropF;
@@ -4631,5 +4630,7 @@
         private System.Windows.Forms.TextBox TXT_MinRD;
         private System.Windows.Forms.TextBox TXT_MaxRF;
         private System.Windows.Forms.TextBox TXT_MinRF;
+        private System.Windows.Forms.RichTextBox DescriptionF;
+        private System.Windows.Forms.TextBox DescriptionL;
     }
 }

@@ -161,6 +161,150 @@ namespace papershredder.Programs.USSE.GUI
                 case "zombies":
                     // Load Zombies configuration
                     var zombies = Config.Config.Normal.Zombies;
+                    SpawnCZ.Value = (decimal)zombies.Spawn_Chance;
+                    LootC.Value = (decimal)zombies.Loot_Chance;
+                    Crawler.Value = (decimal)zombies.Crawler_Chance;
+                    Sprinter.Value = (decimal)zombies.Sprinter_Chance;
+                    Flanker.Value = (decimal)zombies.Flanker_Chance;
+                    Burner.Value = (decimal)zombies.Burner_Chance;
+                    Acid.Value = (decimal)zombies.Acid_Chance;
+                    Spirit.Value = (decimal)zombies.Spirit_Chance;
+                    Electric.Value = (decimal)zombies.Boss_Electric_Chance;
+                    Wind.Value = (decimal)zombies.Boss_Wind_Chance;
+                    Fire.Value = (decimal)zombies.Boss_Fire_Chance;
+                    RespawnD.Value = (decimal)zombies.Respawn_Day_Time;
+                    RespawnN.Value = (decimal)zombies.Respawn_Night_Time;
+                    RespawnB.Value = (decimal)zombies.Respawn_Beacon_Time;
+                    DamageM.Value = (decimal)zombies.Damage_Multiplier;
+                    ArmorM.Value = (decimal)zombies.Armor_Multiplier;
+                    ExperienceBM.Value = (decimal)zombies.Beacon_Experience_Multiplier;
+                    ExperienceFMM.Value = (decimal)zombies.Full_Moon_Experience_Multiplier;
+                    MinDrops.Value = zombies.Min_Drops;
+                    MaxDrops.Value = zombies.Max_Drops;
+                    MinDropsM.Value = zombies.Min_Mega_Drops;
+                    MaxDropsM.Value = zombies.Max_Mega_Drops;
+                    MinDropsB.Value = zombies.Min_Boss_Drops;
+                    MaxDropsB.Value = zombies.Max_Boss_Drops;
+                    Slow.Checked = zombies.Slow_Movement;
+                    Stun.Checked = zombies.Can_Stun;
+                    break;
+                case "animals":
+                    // Load Animals configuration
+                    var animals = Config.Config.Normal.Animals;
+                    RespawnA.Value = (decimal)animals.Respawn_Time;
+                    DamageMA.Value = (decimal)animals.Damage_Multiplier;
+                    InstancesIA.Value = animals.Max_Instances_Insane;
+                    InstancesLA.Value = animals.Max_Instances_Large;
+                    InstancesMA.Value = animals.Max_Instances_Medium;
+                    InstancesSA.Value = animals.Max_Instances_Small;
+                    InstancesTA.Value = animals.Max_Instances_Tiny;
+                    break;
+                case "barricadesstructures":
+                    // Load Barricades configuration
+                    var barricades = Config.Config.Normal.Barricades;
+                    DecayTB.Value = barricades.Decay_Time;
+                    ArmorMB.Value = (decimal)barricades.Armor_Multiplier;
+                    GunDMB.Value = (decimal)barricades.Gun_Damage_Multiplier;
+                    MeleeDMB.Value = (decimal)barricades.Melee_Damage_Multiplier;
+
+                    // Load Structures configuration
+                    var structures = Config.Config.Normal.Structures;
+                    DecayTS.Value = structures.Decay_Time;
+                    ArmorMS.Value = (decimal)structures.Armor_Multiplier;
+                    GunDMS.Value = (decimal)structures.Gun_Damage_Multiplier;
+                    MeleeDMS.Value = (decimal)structures.Melee_Damage_Multiplier;
+                    break;
+                case "players":
+                    // Load Players configuration
+                    var players = Config.Config.Normal.Players;
+                    HealthRegenMF.Value = players.Health_Regen_Min_Food;
+                    HealthRegenMW.Value = players.Health_Regen_Min_Water;
+                    HealthRegenT.Value = players.Health_Regen_Ticks;
+                    FoodT.Value = players.Food_Use_Ticks;
+                    FoodDT.Value = players.Food_Damage_Ticks;
+                    WaterT.Value = players.Water_Use_Ticks;
+                    WaterDT.Value = players.Water_Damage_Ticks;
+                    VirusI.Value = players.Virus_Infect;
+                    VirusT.Value = players.Virus_Use_Ticks;
+                    VirusDT.Value = players.Virus_Damage_Ticks;
+                    LegT.Value = players.Leg_Regen_Ticks;
+                    BleedDT.Value = players.Bleed_Damage_Ticks;
+                    BleedRT.Value = players.Bleed_Regen_Ticks;
+                    ArmorMP.Value = (decimal)players.Armor_Multiplier;
+                    ExperienceM.Value = (decimal)players.Experience_Multiplier;
+                    DetectRM.Value = (decimal)players.Detect_Radius_Multiplier;
+                    RayAD.Value = (decimal)players.Ray_Aggressor_Distance;
+                    LoseSP.Value = (decimal)players.Lose_Skills_PvP;
+                    LoseSE.Value = (decimal)players.Lose_Skills_PvE;
+                    LoseIP.Value = (decimal)players.Lose_Items_PvP;
+                    LoseIE.Value = (decimal)players.Lose_Items_PvE;
+                    LoseCP.Checked = players.Lose_Clothes_PvP;
+                    LoseCE.Checked = players.Lose_Clothes_PvE;
+                    LegsH.Checked = players.Can_Hurt_Legs;
+                    LegsB.Checked = players.Can_Break_Legs;
+                    LegsF.Checked = players.Can_Fix_Legs;
+                    BleedStart.Checked = players.Can_Start_Bleeding;
+                    BleedStop.Checked = players.Can_Stop_Bleeding;
+                    MaxSkills.Checked = players.Spawn_With_Max_Skills;
+                    StaminaS.Checked = players.Spawn_With_Stamina_Skills;
+                    break;
+                case "gameplayobjects":
+                    // Load Gameplay configuration
+                    var gameplay = Config.Config.Normal.Gameplay;
+                    RepairLM.Value = gameplay.Repair_Level_Max;
+                    ExitT.Value = gameplay.Timer_Exit;
+                    RespawnT.Value = gameplay.Timer_Respawn;
+                    HomeT.Value = gameplay.Timer_Home;
+                    GroupMM.Value = gameplay.Max_Group_Members;
+                    Hitmarkers.Checked = gameplay.Hitmarkers;
+                    Crosshair.Checked = gameplay.Crosshair;
+                    Ballistics.Checked = gameplay.Ballistics;
+                    Chart.Checked = gameplay.Chart;
+                    Satellite.Checked = gameplay.Satellite;
+                    Compass.Checked = gameplay.Compass;
+                    GroupM.Checked = gameplay.Group_Map;
+                    GroupHUD.Checked = gameplay.Group_HUD;
+                    StaticGroups.Checked = gameplay.Allow_Static_Groups;
+                    DynamicGroups.Checked = gameplay.Allow_Dynamic_Groups;
+                    ShoulderC.Checked = gameplay.Allow_Shoulder_Camera;
+                    Suicide.Checked = gameplay.Can_Suicide;
+
+                    // Load Objects configuration
+                    var objects = Config.Config.Normal.Objects;
+                    BSRM.Value = (decimal)objects.Binary_State_Reset_Multiplier;
+                    FuelRM.Value = (decimal)objects.Fuel_Reset_Multiplier;
+                    WaterRM.Value = (decimal)objects.Water_Reset_Multiplier;
+                    ResourceRM.Value = (decimal)objects.Resource_Reset_Multiplier;
+                    RubbleRM.Value = (decimal)objects.Rubble_Reset_Multiplier;
+                    break;
+                case "events":
+                    var events = Config.Config.Normal.Events;
+                    MinRF.Value = (decimal)events.Rain_Frequency_Min;
+                    MaxRF.Value = (decimal)events.Rain_Frequency_Max;
+                    MinRD.Value = (decimal)events.Rain_Duration_Min;
+                    MaxRD.Value = (decimal)events.Rain_Duration_Max;
+                    MinSF.Value = (decimal)events.Snow_Frequency_Min;
+                    MaxSF.Value = (decimal)events.Snow_Frequency_Max;
+                    MinSD.Value = (decimal)events.Snow_Duration_Min;
+                    MaxSD.Value = (decimal)events.Snow_Duration_Max;
+                    MinAF.Value = (decimal)events.Airdrop_Frequency_Min;
+                    MaxAF.Value = (decimal)events.Airdrop_Frequency_Max;
+                    AirdropS.Value = (decimal)events.Airdrop_Speed;
+                    AirdropF.Value = (decimal)events.Airdrop_Force;
+                    MinAP.Value = events.Arena_Min_Players;
+                    CircleDMG.Value = events.Arena_Compactor_Damage;
+                    ArenaCT.Value = events.Arena_Clear_Timer;
+                    TimerF.Value = events.Arena_Finale_Timer;
+                    TimerR.Value = events.Arena_Restart_Timer;
+                    CircleDT.Value = events.Arena_Compactor_Delay_Timer;
+                    CirclePT.Value = events.Arena_Compactor_Pause_Timer;
+                    CircleSI.Value = (decimal)events.Arena_Compactor_Speed_Insane;
+                    CircleSL.Value = (decimal)events.Arena_Compactor_Speed_Large;
+                    CircleSM.Value = (decimal)events.Arena_Compactor_Speed_Medium;
+                    CircleSS.Value = (decimal)events.Arena_Compactor_Speed_Small;
+                    CircleST.Value = (decimal)events.Arena_Compactor_Speed_Tiny;
+                    ArenaAirdrops.Checked = events.Arena_Use_Airdrops;
+                    PauseCircle.Checked = events.Arena_Use_Compactor_Pause;
                     break;
             }
         }
