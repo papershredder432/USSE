@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using SDG.Unturned;
 using System.IO;
+using System.Windows.Forms;
 
 namespace papershredder.Programs.USSE.Memory
 {
@@ -15,6 +16,7 @@ namespace papershredder.Programs.USSE.Memory
 
                 return ConfigData;
             }
+            internal set { ConfigData = value; }
         }
         public string Location { get; set; }
 
@@ -30,7 +32,16 @@ namespace papershredder.Programs.USSE.Memory
         private void LoadConfig()
         {
             if (File.Exists(Location) && Directory.Exists(Path.GetDirectoryName(Location)))
-                ConfigData = JsonConvert.DeserializeObject<ConfigData>(File.ReadAllText(Location));
+            {
+                try
+                {
+                    ConfigData = JsonConvert.DeserializeObject<ConfigData>(File.ReadAllText(Location));
+                }
+                catch
+                {
+                    MessageBox.Show("ERROR: File is not a valid .json file or it is not valid in terms of it being unturned's Config.json", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
             else
                 ConfigData = null;
         }
