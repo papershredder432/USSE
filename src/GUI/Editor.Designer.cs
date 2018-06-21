@@ -25,6 +25,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editor));
             this.TopPanel = new System.Windows.Forms.Panel();
             this.Exit = new System.Windows.Forms.PictureBox();
             this.Minimize = new System.Windows.Forms.PictureBox();
@@ -344,9 +345,9 @@
             this.TXT_MaxRF = new System.Windows.Forms.TextBox();
             this.TXT_MinRF = new System.Windows.Forms.TextBox();
             this.File = new System.Windows.Forms.TabPage();
+            this.Verification = new System.Windows.Forms.Button();
             this.FileOutput = new System.Windows.Forms.RichTextBox();
             this.TXT_Load = new System.Windows.Forms.Label();
-            this.Verification = new System.Windows.Forms.Button();
             this.TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Exit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize)).BeginInit();
@@ -4412,6 +4413,16 @@
             this.File.Text = "File";
             this.File.UseVisualStyleBackColor = true;
             // 
+            // Verification
+            // 
+            this.Verification.Location = new System.Drawing.Point(669, 232);
+            this.Verification.Name = "Verification";
+            this.Verification.Size = new System.Drawing.Size(49, 23);
+            this.Verification.TabIndex = 1;
+            this.Verification.Text = "Verify";
+            this.Verification.UseVisualStyleBackColor = true;
+            this.Verification.Click += new System.EventHandler(this.Verification_Click);
+            // 
             // FileOutput
             // 
             this.FileOutput.Location = new System.Drawing.Point(3, 6);
@@ -4428,16 +4439,6 @@
             this.TXT_Load.Size = new System.Drawing.Size(91, 13);
             this.TXT_Load.TabIndex = 0;
             this.TXT_Load.Text = "Load from the file:";
-            // 
-            // Verification
-            // 
-            this.Verification.Location = new System.Drawing.Point(669, 232);
-            this.Verification.Name = "Verification";
-            this.Verification.Size = new System.Drawing.Size(49, 23);
-            this.Verification.TabIndex = 1;
-            this.Verification.Text = "Verify";
-            this.Verification.UseVisualStyleBackColor = true;
-            this.Verification.Click += new System.EventHandler(this.Verification_Click);
             // 
             // Editor
             // 
@@ -4456,9 +4457,11 @@
             this.Controls.Add(this.LeftPanel);
             this.Controls.Add(this.TopPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Editor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Unturned Server Settings Editor";
+            this.Load += new System.EventHandler(this.Editor_Load);
             this.TopPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Exit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize)).EndInit();

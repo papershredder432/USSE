@@ -41,6 +41,7 @@
             this.panelBack.BackColor = System.Drawing.SystemColors.ControlDark;
             this.panelBack.Controls.Add(this.pictureBoxLogo);
             this.panelBack.Controls.Add(this.pictureBoxUSSE);
+            this.panelBack.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.panelBack.Location = new System.Drawing.Point(0, -1);
             this.panelBack.Name = "panelBack";
             this.panelBack.Size = new System.Drawing.Size(790, 88);

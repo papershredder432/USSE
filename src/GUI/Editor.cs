@@ -1784,5 +1784,10 @@ namespace papershredder.Programs.USSE.GUI
             }
         }
         #endregion
+
+        private void Editor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
